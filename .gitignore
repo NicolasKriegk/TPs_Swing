@@ -1,0 +1,7 @@
+*.class
+/TP1_HelloWorld/build/
+/TP2_HelloWorld/nbproject/private/
+/TP2_HelloWorld/build/
+/TP2_HelloWorld/dist/
+/TP4_GestionPersonnes/nbproject/private/
+/TP4_GestionPersonnes/build/
