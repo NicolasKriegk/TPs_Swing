@@ -4,29 +4,28 @@
  */
 package model;
 
-import java.util.Date;
-
 /**
  *
  * @author imie
  */
-public class Person {
+public class PersonGUI {
     
     private String name;
     private String firstname;
     
-    private Date birthDate;
+    private String birthDate;
     private String cursus;
+    private String[] fields;
     
-    public Person(){
+    public PersonGUI(){
     }
     
-    public Person(String name){
+    public PersonGUI(String name){
         this.name = name;
     }
     
-    public Person(String name, String firstname){
-        this.name = name;
+    public PersonGUI(String name, String firstname){
+        this.firstname = name;
         this.firstname = firstname;
     }
     
@@ -46,11 +45,11 @@ public class Person {
         this.firstname = firstname;
     }
     
-    public Date getBirthDate(){
+    public String getBirthDate(){
         return this.birthDate;
     }
     
-    public void setBirthDate(Date birthDate){
+    public void setBirthDate(String birthDate){
         this.birthDate = birthDate;
     }
     
