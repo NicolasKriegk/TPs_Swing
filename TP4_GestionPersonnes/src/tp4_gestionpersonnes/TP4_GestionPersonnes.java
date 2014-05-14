@@ -35,7 +35,7 @@ public class TP4_GestionPersonnes {
     static List<Person> persons = new ArrayList<Person>();
     static final Dimension STD_BUTTON_DIM = new Dimension(50, 20);
 //    static SimpleDateFormat SDF = "dd/MM/yyyy";
-    
+
     /**
      * @param args the command line arguments
      */
@@ -58,12 +58,12 @@ public class TP4_GestionPersonnes {
                 UsersTableModel usersTableModel = new UsersTableModel();
                 usersTableModel.fillTable(persons);
                 JTable usersTable = new JTable(usersTableModel);
-                 JScrollPane usersTableScrollPane = new JScrollPane(usersTable);
+                JScrollPane usersTableScrollPane = new JScrollPane(usersTable);
 //               usersTablePage.add(usersTableScrollPane, BorderLayout.CENTER);
-               usersTablePage.add(usersTableScrollPane);
+                usersTablePage.add(usersTableScrollPane);
                 //usersTable.
-                
-                
+
+
                 personForm = new JPanel();
                 personForm.setName("User information");
 
@@ -87,7 +87,7 @@ public class TP4_GestionPersonnes {
 //                usersTablePage.add(buttonModifUser, BorderLayout.SOUTH);
                 usersTablePage.add(buttonModifUser);
 
-                 JButton buttonQuit = new JButton("Quit");
+                JButton buttonQuit = new JButton("Quit");
 //                usersTablePage.add(buttonQuit, BorderLayout.SOUTH);
                 usersTablePage.add(buttonQuit);
                 buttonQuit.addActionListener(new ActionListener() {
@@ -96,11 +96,11 @@ public class TP4_GestionPersonnes {
                     }
                 });
 
-               //person form
+                //person form
                 JButton buttonOKForm = new JButton("OK");
                 personForm.add(buttonOKForm);
                 //buttonOKForm
-                
+
                 JButton buttonCancelForm = new JButton("Cancel");
                 personForm.add(buttonCancelForm);
                 buttonCancelForm.setOpaque(true);
@@ -110,9 +110,9 @@ public class TP4_GestionPersonnes {
                 frame = new JFrame("User management");
                 frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
                 frame.setPreferredSize(new Dimension(500, 500));
-                  frame.setLocation(900, 900);
-                         
-                
+                frame.setLocation(900, 900);
+
+
                 frame.setContentPane(cards);
 
                 CardLayout cl = (CardLayout) (cards.getLayout());
